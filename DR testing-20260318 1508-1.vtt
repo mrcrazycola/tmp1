@@ -1,0 +1,465 @@
+WEBVTT
+
+1 "Sudharshan Vijay" (2115994112)
+00:00:03.400 --> 00:00:04.623
+Okay. Thank you.
+
+2 "Sneha Sagariya" (2572643072)
+00:00:04.623 --> 00:00:20.000
+So we have, we have a list of the jobs for which we are doing the DR activity. Currently we will be performing this DR activity in UAT and once the.
+
+3 "Sneha Sagariya" (2572643072)
+00:00:20.000 --> 00:00:40.830
+Test is passed in UAT, then we will be performing this activity in production, ok? For UAT we do not have any timeline when we are going to test it like timeline in the sense we don't have any windows where we have to bring down the servers and test it. Maybe we can test it anytime.
+
+4 "Sneha Sagariya" (2572643072)
+00:00:40.830 --> 00:01:00.830
+Production, we have to come up with the dates mostly it is going to be weekend, ok? Okay. So this is little bit of overview and then we have this list of almost I guess 24 jobs 24 jobs, it's the same job, multiple connections. This is.
+
+5 "Sneha Sagariya" (2572643072)
+00:01:00.830 --> 00:01:24.480
+The list of the job mapping with the connections and we are going to go through this one job, the 1st one interface I will show you how we are mapping the connection and then you can take it from here for the other jobs so I guess it is seven or eight jobs but It's to it when you see the connection list.
+
+6 "Sneha Sagariya" (2572643072)
+00:01:24.480 --> 00:01:53.157
+For this job, what connections are there and what we have to change it is what it is mentioned here, ok? These connections are going to change so every connection after every connection it would be DR testing because we have made a new connections for now in UAT, we have made a new connection, so we have named them DR testing, ok?
+
+7 "Sudharshan Vijay" (2115994112)
+00:01:53.157 --> 00:01:54.239
+Yeah.
+
+8 "Sneha Sagariya" (2572643072)
+00:01:54.239 --> 00:02:19.800
+We recently performed this new connection activity. In production we might not have to do this because in production we will just point it to as it is connection. In UAT we are pointing it to UAT to database for testing. That's why we have made a new schema and pointing it to the new connection. So that's why we have created a new connections, ok?
+
+9 "Sneha Sagariya" (2572643072)
+00:02:19.800 --> 00:02:39.800
+So let me just go through the connection once and show you one of the connection, ok? You will have a sample idea. So whatever connections you see here, just add the abbreviation DR testing to it and point it to the You would, it is self explanatory when you.
+
+10 "Sneha Sagariya" (2572643072)
+00:02:39.800 --> 00:02:50.859
+To start pointing the connection, it would come in the dropdown. So you don't need to worry about that, but I would just show you one of it, ok?
+
+11 "Sudharshan Vijay" (2115994112)
+00:02:50.859 --> 00:02:55.985
+Okay, because we are taking this.
+
+12 "Sneha Sagariya" (2572643072)
+00:02:55.985 --> 00:03:33.860
+Right, so let's see data ok do you see this connection_DR testing. Oh.
+
+13 "Sudharshan Vijay" (2115994112)
+00:03:33.860 --> 00:03:36.338
+Okay yeah but for the new connection.
+
+14 "Sneha Sagariya" (2572643072)
+00:03:36.338 --> 00:03:45.096
+That we have created for the DR testing which is pointing to UAT two database will have an abbreviation_DR test.
+
+15 "Sudharshan Vijay" (2115994112)
+00:03:45.096 --> 00:03:47.499
+Testing and testing.
+
+16 "Sneha Sagariya" (2572643072)
+00:03:47.499 --> 00:03:51.447
+We are just gonna.
+
+17 "Sudharshan Vijay" (2115994112)
+00:03:51.447 --> 00:03:53.941
+Or will it be.
+
+18 "Sneha Sagariya" (2572643072)
+00:03:53.941 --> 00:04:10.962
+This is already created. I have done that. I have created all the connections so you don't need to worry about that. All you need to do is, the dogs are there, right? You have to point that to the connections, ok?
+
+19 "Sudharshan Vijay" (2115994112)
+00:04:10.962 --> 00:04:13.462
+Okay, so.
+
+20 "Sneha Sagariya" (2572643072)
+00:04:13.462 --> 00:04:19.170
+Oh, ok, let's start with this job.
+
+21 "Sneha Sagariya" (2572643072)
+00:04:19.170 --> 00:04:34.709
+So simultaneously you got it right like whatever connection you are seeing here_DR testing, do not If there is something called though ignore that, just pointing to DR testing because.
+
+22 "Sneha Sagariya" (2572643072)
+00:04:34.709 --> 00:04:54.709
+Excuse me, sorry, because that is having a new schema. So what we did here also let me just show you in case if you It is the same connection from existing existing.
+
+23 "Sneha Sagariya" (2572643072)
+00:04:54.709 --> 00:05:14.709
+Connection is only this right data hub ODS, everything remains same. Only we have changed the schema name. So if you see here, workday_data hub_OD schema so ODS schema one. So if you have any connect confusion in connections while doing it, just open.
+
+24 "Sneha Sagariya" (2572643072)
+00:05:14.709 --> 00:05:42.139
+Connection go to the advanced setting and see what is the name, ok? If the schema name is this, let me point put it into the sheet ok I'll just put it into the sheet and you can you can refer it ok if my name is this in the advanced setting means we are pointing it to.
+
+25 "Sudharshan Vijay" (2115994112)
+00:05:44.587 --> 00:05:46.903
+Okay.
+
+26 "Sneha Sagariya" (2572643072)
+00:05:46.903 --> 00:05:49.918
+Did it make sense? Do you have any questions so far?
+
+27 "Sudharshan Vijay" (2115994112)
+00:05:49.918 --> 00:05:53.628
+What else schema name would be there?
+
+28 "Sneha Sagariya" (2572643072)
+00:05:53.628 --> 00:06:12.299
+The other name would be other schema name would be depending on depending on what the connection is pointing so we can just quickly check the same connection same connection for for and see what is the schema name.
+
+29 "Sneha Sagariya" (2572643072)
+00:06:12.299 --> 00:06:28.259
+But I don't think you need to worry about that because we are just doing for you for DR activities so just to try to limit into that don't.
+
+30 "Sneha Sagariya" (2572643072)
+00:06:28.259 --> 00:06:55.284
+Hold on my lab work so every every connection will have a different schema name depending on which where it is pointing to so but I can show you but instead of instead of remembering what connection it would be there, it is easy to remember that what connection it should be there, ok?
+
+31 "Sudharshan Vijay" (2115994112)
+00:06:55.284 --> 00:06:56.847
+Okay.
+
+32 "Sneha Sagariya" (2572643072)
+00:06:56.847 --> 00:07:07.562
+So it will be easy. I'll I'll show.
+
+33 "Sneha Sagariya" (2572643072)
+00:07:22.759 --> 00:07:50.221
+See if we see this connection, right? This is the general, the little connection if you see that everything else will say the same but the schema name is workday data hub ODS schema, whereas schema, the one which we are doing for UAT two is.
+
+34 "Sudharshan Vijay" (2115994112)
+00:07:50.221 --> 00:07:54.868
+Workday data hub schema one. Yeah, so.
+
+35 "Sneha Sagariya" (2572643072)
+00:07:54.868 --> 00:08:12.685
+That is the difference. Okay, so let's go to the top and let's make the connection changes.
+
+36 "Sneha Sagariya" (2572643072)
+00:08:13.277 --> 00:08:32.869
+So basically this is the list of the jobs. There are only five jobs I believe. I don't know, I think he forgot to add the F interface. So if you go here.
+
+37 "Sneha Sagariya" (2572643072)
+00:08:32.869 --> 00:09:00.739
+And you have to go through the entire workflow and check everywhere, where are the connections made, ok? And you have to point it to that connection so basically you make sure do not touch it, ok? So make sure don't touch anything outside this folder, you have.
+
+38 "Sneha Sagariya" (2572643072)
+00:09:00.739 --> 00:09:16.340
+Have to be in ICSDR. There is one more folder DR DR testing or something like that if you if you search here DR testing and ICSDR, just to make all the changes in ICSDR.
+
+39 "Sudharshan Vijay" (2115994112)
+00:09:16.340 --> 00:09:18.748
+Okay. Okay.
+
+40 "Sneha Sagariya" (2572643072)
+00:09:18.748 --> 00:09:21.397
+Just give me a second.
+
+41 "Sudharshan Vijay" (2115994112)
+00:09:21.397 --> 00:09:28.663
+Oh.
+
+42 "Sneha Sagariya" (2572643072)
+00:09:28.663 --> 00:09:59.024
+There is nothing here. I'm just trying to see what all ok alright so just go to this ICSDR, ok? That is the folder where you have to make the connection changes and let's start. So if you see anything outside if you do it will impact the existing jobs.
+
+43 "Sudharshan Vijay" (2115994112)
+00:09:59.024 --> 00:10:03.668
+Okay.
+
+44 "Sneha Sagariya" (2572643072)
+00:10:03.668 --> 00:10:10.061
+And you can verify once you open the job, you can verify the location in this folder.
+
+45 "Sudharshan Vijay" (2115994112)
+00:10:10.061 --> 00:10:14.378
+Right ok.
+
+46 "Sneha Sagariya" (2572643072)
+00:10:14.378 --> 00:10:30.809
+Names start does not show anything here Input field.
+
+47 "Sneha Sagariya" (2572643072)
+00:10:30.809 --> 00:10:47.159
+Okay, it says data task nothing where are the connections?
+
+48 "Sneha Sagariya" (2572643072)
+00:10:47.159 --> 00:11:06.209
+Oh The connections.
+
+49 "Sneha Sagariya" (2572643072)
+00:11:43.499 --> 00:12:09.263
+Okay, so this is also the mapping.
+
+50 "Sneha Sagariya" (2572643072)
+00:12:13.965 --> 00:12:23.762
+Yeah, here it is. See, so you got it right from where I'm going.
+
+51 "Sneha Sagariya" (2572643072)
+00:12:25.039 --> 00:12:37.919
+Yeah yeah yeah it is little confusing, I can understand, but basically you saw the you are seeing this connection I will show it again.
+
+52 "Sneha Sagariya" (2572643072)
+00:12:37.919 --> 00:12:57.158
+So this is basically pointing to DR which we did last year, DR activity, that's pointing to DR. If you click on the dropdown, you would see you should be seeing DR testing data from you can just.
+
+53 "Sudharshan Vijay" (2115994112)
+00:12:57.158 --> 00:12:59.403
+We can give a name and search.
+
+54 "Sneha Sagariya" (2572643072)
+00:12:59.403 --> 00:13:15.289
+Right yeah_he did I think the yeah so here is our connection. So most of the connections you can change it in the mapping.
+
+55 "Sneha Sagariya" (2572643072)
+00:13:15.289 --> 00:13:20.789
+So let's show.
+
+56 "Sneha Sagariya" (2572643072)
+00:13:21.688 --> 00:13:39.659
+We open this, like the task flow or and then we went through the mapping task in the task flow and there would be multiple mapping tasks and mappings, ok? So you have to make sure you go through each and every one of that.
+
+57 "Sneha Sagariya" (2572643072)
+00:13:39.659 --> 00:14:04.044
+Okay, so I just I just went the 1st mapping I had let me see the I I believe we had the mapping between the task flow and the mappings and mapping tasks also. I see that in my email once and if I mean in my folders and if I have it, I will give you.
+
+58 "Sudharshan Vijay" (2115994112)
+00:14:04.044 --> 00:14:05.947
+So basically you.
+
+59 "Sneha Sagariya" (2572643072)
+00:14:05.947 --> 00:14:19.199
+To do this object workday data of ODS schema table, I think this also needs to be changed, right? Because yeah, this would be.
+
+60 "Sneha Sagariya" (2572643072)
+00:14:19.199 --> 00:14:35.939
+Okay so and whatever the table is, it says table here if you see ok hold on 1 s.
+
+61 "Sneha Sagariya" (2572643072)
+00:14:35.939 --> 00:14:53.279
+And then it says that is the table itself. So.
+
+62 "Sneha Sagariya" (2572643072)
+00:14:53.279 --> 00:15:13.279
+Okay we have to go. So I am not sure why are we not seeing anything in this table. We should be able to see the.
+
+63 "Sneha Sagariya" (2572643072)
+00:15:13.279 --> 00:15:34.261
+We should be able to select this and let it let it go for now we will have to go back and check why is it ok object type.
+
+64 "Sneha Sagariya" (2572643072)
+00:15:34.261 --> 00:15:52.789
+You should be able to see everything in the view Table.
+
+65 "Sudharshan Vijay" (2115994112)
+00:15:52.789 --> 00:15:56.460
+I guess there's NO data on the table.
+
+66 "Sneha Sagariya" (2572643072)
+00:15:56.460 --> 00:16:29.479
+Oh NO they have copied the same schema just renamed it so we need to check this with the DBA team but basically this is an idea if you go to the express every mapping mapping in mapping every workflow you have to check, ok? Sometimes there are there are you will not expect, I mean.
+
+67 "Sneha Sagariya" (2572643072)
+00:16:29.479 --> 00:16:54.019
+You will have source and target connections, right? Then there is so what exactly is here? It would be a connection, it looks like there is a connection here, right? So if you just click a dropdown, you should be able to see data they are testing, right? And then you don't need to touch anything else just go to.
+
+68 "Sneha Sagariya" (2572643072)
+00:16:54.019 --> 00:17:09.581
+Target. Okay, and then target, then this connection flat file. I don't think that flat file we need to change but there would be something called DR testing which you would have made it.
+
+69 "Sudharshan Vijay" (2115994112)
+00:17:09.581 --> 00:17:11.542
+Let me see. Yeah.
+
+70 "Sneha Sagariya" (2572643072)
+00:17:11.542 --> 00:17:31.849
+Data, NO, there is nothing there so you just leave it as it is, ok? Because this is not a sequel connection, so nothing changes.
+
+71 "Sneha Sagariya" (2572643072)
+00:17:31.849 --> 00:17:39.986
+Here once in advance what is there? Nothing is there, just leave it as it is, ok? Go ahead.
+
+72 "Sudharshan Vijay" (2115994112)
+00:17:39.986 --> 00:17:42.067
+So next source one.
+
+73 "Sneha Sagariya" (2572643072)
+00:17:42.067 --> 00:17:51.448
+Yeah, resource again the same same you would be doing the same exercise.
+
+74 "Sudharshan Vijay" (2115994112)
+00:17:51.448 --> 00:17:54.166
+We are testing we need to change.
+
+75 "Sneha Sagariya" (2572643072)
+00:17:54.166 --> 00:18:05.483
+Yeah we are testing, ok?
+
+76 "Sudharshan Vijay" (2115994112)
+00:18:05.483 --> 00:18:08.906
+Okay, and the object we need to change to scheme.
+
+77 "Sneha Sagariya" (2572643072)
+00:18:08.906 --> 00:18:37.609
+Yeah, the object we need to change to schema one, but I'm not sure why it is not showing the we changed it to schema one, then why it is if I do ok please select an object, so object will be table. If we select object and do ok it will ask me to select an object, but there is NO object that is displaying so let me take a screenshot for this.
+
+78 "Sneha Sagariya" (2572643072)
+00:18:37.609 --> 00:18:56.489
+Right now itself the.
+
+79 "Sneha Sagariya" (2572643072)
+00:18:56.489 --> 00:19:18.439
+Okay. U.
+
+80 "Sneha Sagariya" (2572643072)
+00:19:18.439 --> 00:19:43.349
+Oh my goodness. Okay, so.
+
+81 "Sneha Sagariya" (2572643072)
+00:19:43.349 --> 00:20:12.029
+Okay, alright so basically you have to do this, you know, change the connections, change the object type wherever you feel that there is a connection just you you see it, you just go ahead and change it.
+
+82 "Sudharshan Vijay" (2115994112)
+00:20:12.029 --> 00:20:14.506
+If you see how in advance.
+
+83 "Sneha Sagariya" (2572643072)
+00:20:14.506 --> 00:20:40.108
+That's right there is nothing here but if you for few mappings you would be able to see that there are few things in advance also. So just go ahead and change all the connections there and if you have any questions, you can wait for me or maybe asking if you're doing during IST hours, right?
+
+84 "Sudharshan Vijay" (2115994112)
+00:20:40.108 --> 00:20:56.206
+Okay, I just have a doubt like if we just missed a location where on the top we have changed the connection or or between or something we just missed means, how can we identify that under how can we go and change that?
+
+85 "Sneha Sagariya" (2572643072)
+00:20:56.206 --> 00:21:13.441
+So when you run the job, right, like if you miss some connections over here, and if you run the job, it is going to fail, like if you did in source, ok, and you did not do some ok so when we are going to test and run the job it is going to fail.
+
+86 "Sudharshan Vijay" (2115994112)
+00:21:13.441 --> 00:21:19.346
+Okay, so at that specific spot it will it fail and will it get highlighted or.
+
+87 "Sneha Sagariya" (2572643072)
+00:21:19.346 --> 00:21:42.189
+Yeah, mostly it will you you will know once you run the job you will know where exactly it is failing and then we have to go basically it will be too much of activity and extra work for us if we miss it. So let's try to, there are few places where we did last year connections where we were not expecting it like some connections were there in filters also.
+
+88 "Sudharshan Vijay" (2115994112)
+00:21:42.189 --> 00:21:44.365
+Oh, we would expect.
+
+89 "Sneha Sagariya" (2572643072)
+00:21:44.365 --> 00:21:53.059
+But it most of it will be source and target and it would be visibly visible but then there are some connections in expressions of filters as well.
+
+90 "Sneha Sagariya" (2572643072)
+00:21:54.644 --> 00:22:04.139
+Just want you to go through detailedly how much it is possible and if it is not, then obviously we will know it once we run it.
+
+91 "Sneha Sagariya" (2572643072)
+00:22:04.139 --> 00:22:24.139
+So, but few things are obvious like source target and these things are pretty much self explanatory and obviously there are connections here right ok yeah so see here expression there are there are few talks where.
+
+92 "Sneha Sagariya" (2572643072)
+00:22:24.139 --> 00:22:41.056
+I saw last year making connection, there was connections in filter also and in expression also because they might have used some query there or whatever. So just just do that save it and.
+
+93 "Sudharshan Vijay" (2115994112)
+00:22:41.056 --> 00:22:42.806
+Make sure that.
+
+94 "Sneha Sagariya" (2572643072)
+00:22:42.806 --> 00:22:58.008
+But whatever you do, right? Whatever you do not change connections outside this DR folder, ok? Yeah, otherwise it would be a problem for us.
+
+95 "Sudharshan Vijay" (2115994112)
+00:22:58.008 --> 00:22:59.988
+Okay sweet.
+
+96 "Sneha Sagariya" (2572643072)
+00:22:59.988 --> 00:23:23.789
+Got it's for I showed you one connection, you can take over for other connections and I'm going to share you the file. I am going to see if I have the file for the mapping list as well. These are task flows, but if you go if you let me share against If you go again to the.
+
+97 "Sneha Sagariya" (2572643072)
+00:23:23.789 --> 00:23:42.864
+What do you say? Folder. There are mappings and mapping tasks are there as well, ok? So you can just find it there as well the.
+
+98 "Sneha Sagariya" (2572643072)
+00:23:46.767 --> 00:23:59.499
+Local.
+
+99 "Sneha Sagariya" (2572643072)
+00:24:01.968 --> 00:24:11.128
+So one easy way I will show you, ok? So basically this folder, if you see this job, right?
+
+100 "Sudharshan Vijay" (2115994112)
+00:24:11.128 --> 00:24:13.802
+Yeah that we did.
+
+101 "Sneha Sagariya" (2572643072)
+00:24:13.802 --> 00:24:18.479
+Okay, this job resides in the data hub folder.
+
+102 "Sneha Sagariya" (2572643072)
+00:24:18.479 --> 00:24:38.479
+Okay ok now whatever the dependencies of this job is would be in this data hub folder, the mapping task, their mappings, everything would be in the same folder, ok? So if you don't want to get more confused or anything, just go ahead and open every mapping for this task flow.
+
+103 "Sneha Sagariya" (2572643072)
+00:24:38.479 --> 00:24:42.487
+And change change the connection strings.
+
+104 "Sudharshan Vijay" (2115994112)
+00:24:42.487 --> 00:24:49.143
+Okay ok so for all these.
+
+105 "Sneha Sagariya" (2572643072)
+00:24:49.143 --> 00:25:20.909
+So if you go by, if you go by folders also, you will be able to, you don't have to go through list itself. List is just you can just open another tab and open the task flow and you don't have to basically go through task flow and search for the mapping task and mapping. You can go through the folder structure and go through each and every mapping. If you go through each and every mapping also here, you are going to make the connection changes which is ultimately going to update that task flow as well.
+
+106 "Sneha Sagariya" (2572643072)
+00:25:20.909 --> 00:25:40.909
+Okay. All right, once you are done for even a single job, just go ahead and validate. So basically suppose you open the data hub folder, right? And then in this data folder, start with the task flow, ok? Sorry. Start with the mappings, ok?
+
+107 "Sneha Sagariya" (2572643072)
+00:25:40.909 --> 00:25:54.749
+Update all the mappings, connections updated and then just go ahead and open the task flow in the separate window and see all the mapping tasks and mapping exists in the task flow.
+
+108 "Sneha Sagariya" (2572643072)
+00:25:54.749 --> 00:26:14.639
+But pretty much everything is here. Whatever needs to be changed in this sheet, it's in this folder, ok? So you are not going to do anything wrong if you change anything here. It will either be either be for this job file or maybe some of one of these jobs like.
+
+109 "Sneha Sagariya" (2572643072)
+00:26:14.639 --> 00:26:39.508
+You might come back to any one of you. Do you see the demographic also has the ODS connection. So you might end up doing the connection change for this job as well. Anyways, we are not running every anything until and unless we are changing the connection. We are not running single job at a time, right? We are running everything at once, once all the connections are changed. So you can do that, that would be easier.
+
+110 "Sudharshan Vijay" (2115994112)
+00:26:39.508 --> 00:26:52.823
+Okay, so for each connection, we need to copy that and go to that job and paste everything over there and trigger that connection, and once it's successful I should go for the next connection.
+
+111 "Sneha Sagariya" (2572643072)
+00:26:52.823 --> 00:27:17.609
+No NO don't trigger anything. Just make the connection changes. Okay, don't that's what I'm telling you. Okay. Just make the connection changes. Once the connection changes are done, I will validate it. I will have a second. Once that is done, we will find out some window for UAT and we will do the dry run.
+
+112 "Sneha Sagariya" (2572643072)
+00:27:17.609 --> 00:27:37.609
+In UAT. Once that dry run is done, if it is failing, we will go back and see what is the problem, where the connections were missing, and if it is not missing, if the job is successful, then we will just take a screenshot and do that. That's another activity. Right now the activity is only.
+
+113 "Sneha Sagariya" (2572643072)
+00:27:37.609 --> 00:28:00.919
+Need to point the connections for the corresponding jobs. So connections are created which I showed you and then where you have to point I showed you what you have to take from where which folder for the DR you have to take I showed you. Apart from there, when you do the activity, you come across any questions just feel free to ping me. I will give you my number has my number, you can.
+
+114 "Sneha Sagariya" (2572643072)
+00:28:00.919 --> 00:28:25.425
+Take it from him I will give you. In ISD hours if you come across any questions, I think should be able to answer it. But pretty much this is for now your task is only to point the connection. Don't trigger anything, don't run anything, ok? Okay. All righty. I need to jump to another call but yeah if there is anything feel free feel free to ping me, ok.
+
+115 "Sudharshan Vijay" (2115994112)
+00:28:25.425 --> 00:28:27.284
+Yeah.
+
+116 "Chaitanya" (373327104)
+00:28:27.284 --> 00:28:37.280
+Yeah. Yeah, yeah, yeah. Stop recordings. Oh, yeah, stopping.
